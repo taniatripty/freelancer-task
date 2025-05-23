@@ -1,3 +1,5 @@
+
+import { Link } from "react-router";
 import digital from "../../assets/digitalpic.jpeg";
 import graphic from "../../assets/service11.jpg";
 import design from "../../assets/service12.jpg";
@@ -6,6 +8,7 @@ import video from "../../assets/video2.jpeg";
 import writting from "../../assets/writting1.jpeg";
 
 const Browseservices = () => {
+   
   return (
     <div className=" mt-10 mb-5 w-11/12 mx-auto">
       <h2 className="text-4xl text-center font-bold mb-8">
@@ -23,7 +26,9 @@ const Browseservices = () => {
               front-end and back-end technologies.
             </p>
             <div className="card-actions">
+                <Link to='/browseservicedetails'>
               <button className="btn btn-primary">see all</button>
+              </Link>
             </div>
           </div>
         </div>

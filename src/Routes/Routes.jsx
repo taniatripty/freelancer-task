@@ -10,6 +10,8 @@ import Mypost from "../components/Mypost/Mypost";
 import Register from "../components/Register/Register";
 import Updatedata from "../components/Updatedata/Updatedata";
 import Errorpage from "./Errorpage/Errorpage";
+import Browseservices from "../Pages/Browseservices/Browseservices";
+import Browseservicedetails from "../Pages/Browseservices/Browseservicedetails";
 
 export const router = createBrowserRouter([
   {
@@ -73,6 +75,11 @@ export const router = createBrowserRouter([
         loader: ({ params }) =>
           fetch(`https://freelance-task-nu.vercel.app/tasks/all/${params.id}`),
       },
+      {
+        path:'/browseservicedetails',
+        Component:Browseservicedetails,
+        loader:()=>fetch('https://freelance-task-nu.vercel.app/tasks/all')
+      }
     ],
   },
 ]);
