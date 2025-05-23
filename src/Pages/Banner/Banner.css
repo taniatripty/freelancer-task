@@ -1,0 +1,6 @@
+.custom-carousel .carousel .slide img {
+    height: 500px; 
+    object-fit: cover;
+}
+
+
