@@ -12,6 +12,11 @@ import Updatedata from "../components/Updatedata/Updatedata";
 import Errorpage from "./Errorpage/Errorpage";
 import Browseservices from "../Pages/Browseservices/Browseservices";
 import Browseservicedetails from "../Pages/Browseservices/Browseservicedetails";
+import Design from "../Pages/Design/Design";
+import Graphics from "../Pages/Graphics/Graphics";
+import Videoediting from "../Pages/Videoediting/Videoediting";
+import Writting from "../Pages/Writting/Writting";
+import Digital from "../Pages/Digital/Digital";
 
 export const router = createBrowserRouter([
   {
@@ -78,6 +83,31 @@ export const router = createBrowserRouter([
       {
         path:'/browseservicedetails',
         Component:Browseservicedetails,
+        loader:()=>fetch('https://freelance-task-nu.vercel.app/tasks/all')
+      },
+      {
+        path:'/design',
+        Component:Design,
+        loader:()=>fetch('https://freelance-task-nu.vercel.app/tasks/all')
+      },
+      {
+        path:'/graphics',
+        Component:Graphics,
+        loader:()=>fetch('https://freelance-task-nu.vercel.app/tasks/all')
+      },
+       {
+        path:'/video',
+        Component:Videoediting,
+        loader:()=>fetch('https://freelance-task-nu.vercel.app/tasks/all')
+      },
+      {
+        path:'/writting',
+        Component:Writting,
+        loader:()=>fetch('https://freelance-task-nu.vercel.app/tasks/all')
+      },
+       {
+        path:'/digital',
+        Component:Digital,
         loader:()=>fetch('https://freelance-task-nu.vercel.app/tasks/all')
       }
     ],

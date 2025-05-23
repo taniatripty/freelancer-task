@@ -1,4 +1,3 @@
-
 import { Link } from "react-router";
 import digital from "../../assets/digitalpic.jpeg";
 import graphic from "../../assets/service11.jpg";
@@ -8,7 +7,6 @@ import video from "../../assets/video2.jpeg";
 import writting from "../../assets/writting1.jpeg";
 
 const Browseservices = () => {
-   
   return (
     <div className=" mt-10 mb-5 w-11/12 mx-auto">
       <h2 className="text-4xl text-center font-bold mb-8">
@@ -26,8 +24,8 @@ const Browseservices = () => {
               front-end and back-end technologies.
             </p>
             <div className="card-actions">
-                <Link to='/browseservicedetails'>
-              <button className="btn btn-primary">see all</button>
+              <Link to="/browseservicedetails">
+                <button className="btn btn-primary">see all</button>
               </Link>
             </div>
           </div>
@@ -44,7 +42,9 @@ const Browseservices = () => {
               with a focus on responsiveness and aesthetics.
             </p>
             <div className="card-actions">
-              <button className="btn btn-primary">see all</button>
+              <Link to="/design">
+                <button className="btn btn-primary">see all</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -59,7 +59,9 @@ const Browseservices = () => {
               platforms using design tools.
             </p>
             <div className="card-actions">
-              <button className="btn btn-primary">see all</button>
+              <Link to="/graphics">
+                <button className="btn btn-primary">see all</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -74,7 +76,9 @@ const Browseservices = () => {
               media with clarity and purpose.
             </p>
             <div className="card-actions">
-              <button className="btn btn-primary">see all</button>
+              <Link to="/writting">
+                <button className="btn btn-primary">see all</button>
+              </Link>
             </div>
           </div>
         </div>
@@ -89,10 +93,14 @@ const Browseservices = () => {
               effects, music, and transitions.
             </p>
             <div className="card-actions">
-              <button className="btn btn-primary">see all</button>
+              <Link to="/video">
+                <button className="btn btn-primary">see all</button>
+              </Link>
             </div>
+
           </div>
         </div>
+
         <div className="card bg-base-100 w-96 shadow-sm">
           <figure className="px-10 pt-10">
             <img src={digital} alt="Shoes" className="rounded-xl" />
@@ -104,8 +112,10 @@ const Browseservices = () => {
               Promoting brands online through SEO, social media, email
               campaigns, and paid advertising.
             </p>
-            <div className="card-actions">
-              <button className="btn btn-primary">See all</button>
+          <div className="card-actions">
+              <Link to="/digital">
+                <button className="btn btn-primary">see all</button>
+              </Link>
             </div>
           </div>
         </div>
