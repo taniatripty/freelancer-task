@@ -14,12 +14,12 @@ const Feature = () => {
   return (
     <div>
       <div className="overflow-x-auto w-11/12 mx-auto">
-        <table className="table">
+        <table className="table table-auto">
           
           <thead>
             <tr>
               <th></th>
-             
+             <th>Name</th>
               <th>Category</th>
               <th>Title</th>
               <th>Description</th>
@@ -28,7 +28,7 @@ const Feature = () => {
             </tr>
           </thead>
           <tbody>
-            {/* row 1 */}
+           
 
             {data.map((item,index) => (
               <Featuredetails key={item._id} index={index} item={item}></Featuredetails>

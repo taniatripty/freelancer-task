@@ -78,6 +78,15 @@ const Addtask = () => {
               <option value="graphics">Graphics Design</option>
             </select>
           </fieldset>
+          <fieldset className="fieldset  border-base-100 rounded-box border p-4">
+            <label className="label">Photo</label>
+            <input
+              type="text"
+              name="photo"
+              className="input w-full"
+              placeholder="photo"
+            />
+          </fieldset>
 
           <fieldset className="fieldset  border-base-100 rounded-box border p-4">
             <label className="label">Description</label>

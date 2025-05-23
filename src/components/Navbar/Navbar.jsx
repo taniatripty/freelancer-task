@@ -93,7 +93,7 @@ const Navbar = () => {
   </div>
   <div>
    
-    <img className="w-10 rounded-4xl ml-52 " src={`${user && user.photoURL}`} alt="" />
+    <img className="w-10 rounded-4xl lg:ml-52 " src={`${user && user.photoURL}`} alt="" />
   </div>
   <div className="navbar-end">
     <Link to='login'>
