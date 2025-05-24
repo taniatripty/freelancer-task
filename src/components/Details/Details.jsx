@@ -22,18 +22,18 @@ const Details = () => {
       <div className="card w-96 bg-base-100 shadow-md">
         <div className="card-body">
           <img className='h-48 rounded-2xl' src={data.photo} alt="" />
-          <h2 className="card-title">{data.title}</h2>
-          <p className='text-2xl font-bold text-center'>Posted By</p>
+          <h2 className="card-title text-gray-500">{data.title}</h2>
+          <p className='text-2xl text-gray-500 font-bold text-center'>Posted By</p>
           <div className='flex justify-between'>
-            <p className='font-semibold'>{data.name}</p>
-            <p className='font-semibold'>{data.email}</p>
+            <p className='font-semibold text-gray-500'>{data.name}</p>
+            <p className='font-semibold text-gray-500'>{data.email}</p>
           </div>
           <div className='flex justify-around'>
-            <p>Category: {data.category}</p>
-            <p>Budget: {data.budget}</p>
+            <p className='text-gray-500'>Category: {data.category}</p>
+            <p className='text-gray-500'>Budget: {data.budget}</p>
           </div>
           <p className='text-gray-500'>{data.description}</p>
-          <p className="font-semibold">Current Bids: {bids}</p>
+          <p className="font-semibold text-gray-500">Current Bids: {bids}</p>
           <div className="card-actions justify-end">
             <button onClick={handleBids} className="btn btn-primary">Bid Now</button>
           </div>

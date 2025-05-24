@@ -9,11 +9,11 @@ const Browseservicedetails = () => {
     <div className="w-11/12  mx-auto grid  grid-cols-1 lg:grid-cols-3 gap-5 mt-5 mb-5 ">
       {web.map((single) => (
         <div key={single._id}>
-          <div className="card bg-base-100 lg:h-96 w-96 shadow-sm">
+          <div className="bg-base-100 lg:h-96 w-96 shadow-sm">
             <figure className="px-10 pt-10">
               <img src={single.photo} className="rounded-xl" />
             </figure>
-            <div className="card-body items-center text-center">
+            <div className=" items-center text-center">
               <h2 className="card-title">{single.title}</h2>
               <p>{single.description}</p>
               <div className="flex gap-24">
