@@ -83,14 +83,13 @@ const Navbar = () => {
     </div>
     <a className="btn btn-ghost text-xl hidden lg:flex">Freelance task marketplace</a>
   </div>
+  
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
       {links}
     </ul>
   </div>
-  <div>
-     
-  </div>
+  
   
  
   <div className="navbar-end">
