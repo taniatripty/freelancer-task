@@ -47,8 +47,8 @@ const Addtask = () => {
   };
 
   return (
-    <div className="bg-amber-50 p-4 min-h-screen w-11/12 mx-auto">
-      <h2 className="text-3xl text-center font-bold"> Add Task</h2>
+    <div className=" p-4 min-h-screen w-11/12 mx-auto">
+      <h2 className="text-3xl  text-center "> Add Task</h2>
 
       <form onSubmit={handlesubmit}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

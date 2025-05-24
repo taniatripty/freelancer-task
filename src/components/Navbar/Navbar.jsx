@@ -86,7 +86,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost text-xl hidden lg:flex">
+        <Link to="/" className="btn btn-ghost hover:btn-primary text-xl hidden lg:flex">
           Freelance Task Marketplace
         </Link>
       </div>
