@@ -137,7 +137,7 @@ const Addtask = () => {
             />
           </fieldset>
         </div>
-        <button className="w-full rounded-4xl btn  text-xl" type="submit">
+        <button className="w-full rounded-4xl btn text-xl" type="submit">
           Add
         </button>
       </form>
