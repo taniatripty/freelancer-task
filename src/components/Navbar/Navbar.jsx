@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { Link, NavLink } from "react-router";
 import { Authcontex } from "../../Contex/Authcontex";
 import { useTheme } from "../../Pages/Hook/Usetheme";
+import './Navbar.css'
 
 const Navbar = () => {
   const { changeTheme, mode } = useTheme();
@@ -59,7 +60,7 @@ const Navbar = () => {
   );
 
   return (
-    <div className="navbar bg-base-100 shadow-sm">
+    <div className="navbar  rounded  shadow-sm">
       <div className="navbar-start">
         <div className="dropdown">
           <button tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -89,6 +90,7 @@ const Navbar = () => {
           Freelance Task Marketplace
         </Link>
       </div>
+     
 
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
@@ -96,7 +98,7 @@ const Navbar = () => {
 
       <div className="navbar-end flex items-center gap-3">
         <button onClick={changeTheme} className="btn btn-ghost">
-          {mode === "light" ? (
+          {mode === "dark" ? (
             <svg
               className="swap-off h-10 w-10 fill-current"
               xmlns="http://www.w3.org/2000/svg"
