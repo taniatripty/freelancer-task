@@ -25,5 +25,5 @@ export const useTheme = () => {
     setMode(currentMode);
   }, []);
 
-  return { changeTheme, mode }
+  return { changeTheme, mode };
 };

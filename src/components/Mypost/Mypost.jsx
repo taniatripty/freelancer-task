@@ -103,7 +103,7 @@ const Mypost = () => {
           </tbody>
         </table>
 
-        {/* ✅ Modal */}
+       
         {modalOpen && selectedPost && (
           <div className="fixed inset-0  bg-opacity-50 z-50 flex justify-center items-center">
             <div className="bg-white p-6 rounded-lg w-96 shadow-xl">
