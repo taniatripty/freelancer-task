@@ -115,9 +115,6 @@ npm run build
 ```
 Deploy `dist/` to Firebase Hosting, Netlify, Vercel, or similar.
 
-**Server**
-- Deploy to Heroku, Render, Railway, or a VPS.
-- Set environment variables in the host dashboard and point the client to the server URL.
 
 ---
 
@@ -140,21 +137,17 @@ root/
 │  │  └─ main.jsx
 │  └─ package.json
 ├─ server/
-│  ├─ routes/
-│  ├─ controllers/
 │  ├─ config/
 │  ├─ index.js
 │  └─ package.json
+│  
+│  
 └─ README.md
 ```
 
----
 
-## Contributing
-1. Fork the repo
-2. Create a branch: `git checkout -b feature/your-feature`
-3. Commit your changes: `git commit -m "feat: add ..."`
-4. Push and open a Pull Request
+
+
 
 
 
